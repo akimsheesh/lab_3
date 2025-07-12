@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Detail - XTreme-Bundle</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(46, 93, 117);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      text-align: right;
+      font-size: 14px;
+    }
+    .top-bar {
+      background-color: rgb(76, 76, 222);
+      padding: 15px;
+      color: antiquewhite;
+      text-align: center;
+    }
+    nav {
+      background-color: rgb(135, 177, 231);
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      padding: 15px 20px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: blue;
+      color: white;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .product-image {
+      flex: 1;
+      min-width: 300px;
+      padding: 10px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product-details {
+      flex: 2;
+      padding: 10px;
+    }
+    .product-details h2 {
+      margin-top: 0;
+    }
+    .buy-btn {
+      background-color: rgb(76, 76, 222);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .buy-btn:hover {
+      background-color: blue;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Welcome Visitor | <a href="#" style="color: lightblue;">Login</a> or <a href="#" style="color: lightblue;">Sign Up</a> |
+    <strong>Shopping Cart:</strong> 1 item(s) - RM 45.00
+  </header>
+
+  <div class="top-bar">
+    <h1>XTreme-Bundle</h1>
+    <small>Ulu Tiram Johor</small>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="category.html">Category</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="raya.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2>Kurta</h2>
+      <p><strong>Price:</strong> RM45.00</p>
+      <p><strong>Description:</strong> High-quality cotton hoodie with fleece lining. Available in all sizes. Limited stock only!</p>
+      <p><strong>Size:</strong> S, M, L, XL</p>
+      <p><strong>Color:</strong> Black</p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 XTreme-Bundle. All rights reserved.
+  </footer>
+
+</body>
+</html>
